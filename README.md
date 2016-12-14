@@ -4,7 +4,7 @@ The GeyekRatingBar can set spacing between items.</br>
 But, It can set more status now.
 You can set progress and progressed for GeyekRatingBar's status.</br>
 If you have more question, please call by Issues on the <Github.com>.
-![Demo](Image/Demo1.gif)
+![Demo](Image/demo1.gif)
 
 Under the Picture, It's a demo by *.xml*:
 	<com.geyek.widget.GeyekRatingBar
