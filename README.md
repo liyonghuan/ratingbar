@@ -46,7 +46,7 @@ In my project, I need a RatingBar that can set spacing between items, but some o
 Then I create this project.
 
 #Unsolved
-But,the property "automatic" can be effective.</br>
+But,the property "automatic" can't be effective.</br>
 GeyekRatingBar's method like RatingBar of Android, so you can easy to get started.
 
 #Thank
