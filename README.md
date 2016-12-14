@@ -1,6 +1,6 @@
 # GeyekRatingBar
 The GeyekRatingBar can set spacing between items.</br>
-But, It can set more status now.
+But, It can't set more status now.
 You can set progress and progressed for GeyekRatingBar's status.</br>
 If you have more question, please call by Issues on the <Github.com>.
 
@@ -26,11 +26,26 @@ It's a demo by *.xml*:
 ###2，In Java code
 Like custom RatingBar of Android.
 
-#about
+	GeyekRatingBar geyekRatingBar = new GeyekRatingBar(this);
+    geyekRatingBar.setRating(0);
+    geyekRatingBar.setSpacing(10);
+    geyekRatingBar.setIsIndicator(false);
+    geyekRatingBar.setNumStars(5);
+    geyekRatingBar.setStepSize(0.5F);
+    geyekRatingBar.setProgress(null);
+	geyekRatingBar.setProgressed(null);
+	geyekRatingBar.setOnRatingBarChangeListener(new GeyekRatingBar.OnRatingBarChangeListener() {
+		@Override
+		public void onRatingChanged(GeyekRatingBar ratingBar, float rating, boolean fromUser) {
+                
+		}
+	});
+
+#About
 In my project, I need a RatingBar that can set spacing between items, but some open source project and developer anwser can't resolve mine requirement.</br>
 Then I create this project.
 
-#unsolved
+#Unsolved
 But,the property "automatic" can be effective.</br>
 GeyekRatingBar's method like RatingBar of Android, so you can easy to get started.
 
