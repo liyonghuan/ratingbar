@@ -2,7 +2,9 @@
 The GeyekRatingBar can set spacing between items.</br>
 But, It can't set more status now.
 You can set progress and progressed for GeyekRatingBar's status.</br>
-If you have more question, please call by Issues on the <Github.com>.
+If you have more question, please call by Issue [Click Here][1].
+
+[1]:https://github.com/wusiyi/GeyekRatingBar/issues
 
 ![Demo](Image/demo1.gif)
 
