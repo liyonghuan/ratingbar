@@ -10,11 +10,11 @@
     <com.geyek.widget.GeyekRatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:progress="@drawable/star_normal"
-        app:progressed="@drawable/star_selected"
+        app:progress="@drawable/btn_rating_star_off_normal"
+        app:progressed="@drawable/btn_rating_star_off_selected"
         app:numStars="6"
-        app:rating="2.5"
-        app:stepSize="0.5"
+        app:rating="0"
+        app:stepSize="0.2"
         app:spacing="10dp"
         app:isIndicator="false"
         app:automatic="fully"/>
