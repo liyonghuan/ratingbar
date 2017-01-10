@@ -1,4 +1,4 @@
-package com.geyek.widget;
+package me.stiky.widget;
 
 import org.junit.Test;
 

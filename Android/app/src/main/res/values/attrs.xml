@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="GeyekRatingBar">
+    <declare-styleable name="RatingBar">
         <!-- The number of stars (or rating items) to show. -->
         <attr name="numStars" format="integer" />
         <!-- The rating to set by default. -->

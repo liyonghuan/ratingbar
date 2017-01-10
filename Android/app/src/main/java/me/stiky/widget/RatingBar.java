@@ -1,4 +1,4 @@
-package com.geyek.widget;
+package me.stiky.widget;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -16,8 +16,8 @@ import android.view.View;
 /**
  * Created by LiHuan on 2016/12/13.
  */
-public class GeyekRatingBar extends View {
-    private static final String TAG = "GeyekRatingBar";
+public class RatingBar extends View {
+    private static final String TAG = "RatingBar";
 
     private int mWidth;
     private int mHeight;
@@ -46,48 +46,48 @@ public class GeyekRatingBar extends View {
 
     private OnRatingBarChangeListener mOnRatingBarChangeListener;
 
-    public GeyekRatingBar(Context context) {
+    public RatingBar(Context context) {
         this(context, null);
     }
 
-    public GeyekRatingBar(Context context, AttributeSet attrs) {
+    public RatingBar(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public GeyekRatingBar(Context context, AttributeSet attrs, int defStyleAttr) {
+    public RatingBar(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
         final Resources.Theme theme = context.getTheme();
-        TypedArray appearance = theme.obtainStyledAttributes(attrs, R.styleable.GeyekRatingBar, defStyleAttr, 0);
+        TypedArray appearance = theme.obtainStyledAttributes(attrs, R.styleable.RatingBar, defStyleAttr, 0);
         if (appearance != null) {
             int indexCount = appearance.getIndexCount();
             for (int i = 0; i < indexCount; i++) {
                 int index = appearance.getIndex(i);
                 switch (index) {
-                    case R.styleable.GeyekRatingBar_numStars:
+                    case R.styleable.RatingBar_numStars:
                         mNumStars = appearance.getInt(index, mNumStars);
                         break;
-                    case R.styleable.GeyekRatingBar_rating:
+                    case R.styleable.RatingBar_rating:
                         mRating = appearance.getFloat(index, mRating);
                         break;
-                    case R.styleable.GeyekRatingBar_stepSize:
+                    case R.styleable.RatingBar_stepSize:
                         mStepSize = appearance.getFloat(index, mStepSize);
                         break;
-                    case R.styleable.GeyekRatingBar_isIndicator:
+                    case R.styleable.RatingBar_isIndicator:
                         mIsIndicator = appearance.getBoolean(index, mIsIndicator);
                         break;
-                    case R.styleable.GeyekRatingBar_spacing:
+                    case R.styleable.RatingBar_spacing:
                         mSpacing = appearance.getDimension(index, mSpacing);
                         break;
-                    case R.styleable.GeyekRatingBar_automatic:
+                    case R.styleable.RatingBar_automatic:
                         mAutomatic = appearance.getInt(index, mAutomatic);
                         break;
-                    case R.styleable.GeyekRatingBar_progress:
+                    case R.styleable.RatingBar_progress:
                         int bgResId = appearance.getResourceId(index, -1);
                         Bitmap bgBitmap = BitmapFactory.decodeResource(getResources(), bgResId);
                         setProgress(bgBitmap);
                         break;
-                    case R.styleable.GeyekRatingBar_progressed:
+                    case R.styleable.RatingBar_progressed:
                         int pgResId = appearance.getResourceId(index, -1);
                         Bitmap pgBitmap = BitmapFactory.decodeResource(getResources(), pgResId);
                         setProgressed(pgBitmap);
@@ -101,9 +101,9 @@ public class GeyekRatingBar extends View {
 
     /*@TargetApi(21)
     @SuppressWarnings("deprecation")
-    public GeyekRatingBar(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public RatingBar(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
-        Log.d(TAG, "GeyekRatingBar: " + BuildConfig.VERSION_CODE);
+        Log.d(TAG, "RatingBar: " + BuildConfig.VERSION_CODE);
     }*/
 
     @Override
@@ -339,7 +339,7 @@ public class GeyekRatingBar extends View {
     }
 
     public interface OnRatingBarChangeListener {
-        void onRatingChanged(GeyekRatingBar ratingBar, float rating, boolean fromUser);
+        void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser);
     }
 
     public void setOnRatingBarChangeListener(OnRatingBarChangeListener listener) {
