@@ -4,7 +4,7 @@ But, It can't set more status now.
 You can set progress and progressed for RatingBar's status.</br>
 If you have more question, please call by Issue [Click Here][1].
 
-[1]:https://github.com/wusiyi/RatingBar/issues
+[1]:https://github.com/liyonghuan/RatingBar/issues
 
 ![Demo](Image/demo1.gif)
 
