@@ -1,7 +1,10 @@
-# RatingBar
-The RatingBar can set spacing between items.</br>
+# RatingBar [中文版][1]
+
+[1]:http://stiky.me/2017/01/24/a-custom-ratingbar-you-can-easy-to-get-started.html
+
+The RatingBar can set spacing between items.
 But, It can't set more status now.
-You can set progress and progressed for RatingBar's status.</br>
+You can set progress and progressed for RatingBar's status.
 If you have more question, please call by Issue [Click Here][1].
 
 [1]:https://github.com/liyonghuan/RatingBar/issues
