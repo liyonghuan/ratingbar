@@ -135,11 +135,16 @@ public class RatingBar extends View {
         int height = (int) (mStarHeight + getPaddingTop() + getPaddingBottom());
         int tempHeight = heightMeasureSpec & MEASURED_SIZE_MASK;
         int h = height - tempHeight;
-        mHeight = h > 0 ? tempHeight : height;
+        mHeight = tempHeight != 0 ? (h > 0 ? tempHeight : height) : height;
+        float y = 1;
+        if (h > 0 && h != height) {
+            y = 1 - h / mStarHeight;
+        }
+        /*mHeight = h > 0 ? tempHeight : height;
         float y = 1;
         if (h > 0) {
             y = 1 - h / mStarHeight;
-        }
+        }*/
         heightMeasureSpec = mHeight | MeasureSpec.AT_MOST;
 
         if (x > y) {
