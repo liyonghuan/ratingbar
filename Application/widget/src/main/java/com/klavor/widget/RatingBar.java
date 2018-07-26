@@ -1,4 +1,4 @@
-package me.stiky.widget;
+package com.klavor.widget;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -63,37 +63,35 @@ public class RatingBar extends View {
             int indexCount = appearance.getIndexCount();
             for (int i = 0; i < indexCount; i++) {
                 int index = appearance.getIndex(i);
-                switch (index) {
-                    case R.styleable.RatingBar_numStars:
-                        mNumStars = appearance.getInt(index, mNumStars);
-                        break;
-                    case R.styleable.RatingBar_rating:
-                        mRating = appearance.getFloat(index, mRating);
-                        break;
-                    case R.styleable.RatingBar_stepSize:
-                        mStepSize = appearance.getFloat(index, mStepSize);
-                        break;
-                    case R.styleable.RatingBar_isIndicator:
-                        mIsIndicator = appearance.getBoolean(index, mIsIndicator);
-                        break;
-                    case R.styleable.RatingBar_spacing:
-                        mSpacing = appearance.getDimension(index, mSpacing);
-                        break;
-                    case R.styleable.RatingBar_automatic:
-                        mAutomatic = appearance.getInt(index, mAutomatic);
-                        break;
-                    case R.styleable.RatingBar_progress:
-                        int bgResId = appearance.getResourceId(index, -1);
-                        Bitmap bgBitmap = BitmapFactory.decodeResource(getResources(), bgResId);
-                        setProgress(bgBitmap);
-                        break;
-                    case R.styleable.RatingBar_progressed:
-                        int pgResId = appearance.getResourceId(index, -1);
-                        Bitmap pgBitmap = BitmapFactory.decodeResource(getResources(), pgResId);
-                        setProgressed(pgBitmap);
-                        break;
-                    default:
-                        break;
+                if (index == R.styleable.RatingBar_numStars) {
+                    mNumStars = appearance.getInt(index, mNumStars);
+
+                } else if (index == R.styleable.RatingBar_rating) {
+                    mRating = appearance.getFloat(index, mRating);
+
+                } else if (index == R.styleable.RatingBar_stepSize) {
+                    mStepSize = appearance.getFloat(index, mStepSize);
+
+                } else if (index == R.styleable.RatingBar_isIndicator) {
+                    mIsIndicator = appearance.getBoolean(index, mIsIndicator);
+
+                } else if (index == R.styleable.RatingBar_spacing) {
+                    mSpacing = appearance.getDimension(index, mSpacing);
+
+                } else if (index == R.styleable.RatingBar_automatic) {
+                    mAutomatic = appearance.getInt(index, mAutomatic);
+
+                } else if (index == R.styleable.RatingBar_progress) {
+                    int bgResId = appearance.getResourceId(index, -1);
+                    Bitmap bgBitmap = BitmapFactory.decodeResource(getResources(), bgResId);
+                    setProgress(bgBitmap);
+
+                } else if (index == R.styleable.RatingBar_progressed) {
+                    int pgResId = appearance.getResourceId(index, -1);
+                    Bitmap pgBitmap = BitmapFactory.decodeResource(getResources(), pgResId);
+                    setProgressed(pgBitmap);
+
+                } else {
                 }
             }
         }

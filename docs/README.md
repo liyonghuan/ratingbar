@@ -14,7 +14,7 @@ If you have more question, please call by Issue [Click Here][1].
 It's a demo by *.xml*:
 
 ```xml
-<me.stiky.widget.RatingBar
+<com.klavor.widget.RatingBar
 	android:layout_width="wrap_content"
 	android:layout_height="wrap_content"
 	app:progress="@drawable/btn_rating_star_off_normal"

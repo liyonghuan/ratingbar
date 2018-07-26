@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:text="ada" />
 
-        <me.stiky.widget.RatingBar
+        <com.klavor.widget.RatingBar
             app:automatic="fully"
             app:isIndicator="false"
             app:numStars="6"

@@ -1,4 +1,4 @@
-package me.stiky.widget;
+package com.klavor.app;
 
 import android.content.Intent;
 import android.graphics.BitmapFactory;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.LinearLayout;
+
+import com.klavor.widget.RatingBar;
 
 public class MainActivity extends AppCompatActivity {
 

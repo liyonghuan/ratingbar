@@ -1,4 +1,4 @@
-package me.stiky.widget;
+package com.klavor.app;
 
 import org.junit.Test;
 
